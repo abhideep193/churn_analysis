@@ -212,8 +212,8 @@ Run all cells to reproduce analysis and model training.
 
 ## Author
 
-**Dibya Pratim Kashyap**  
+**Abhideep Bishui**  
 B.Tech, Computer Science and Engineering  
 Indian Institute of Technology Guwahati
 
-GitHub: https://github.com/dmrworse007
+GitHub: https://github.com/abhideep193
