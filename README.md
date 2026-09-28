@@ -71,7 +71,7 @@ The dataset contains customer information such as:
 - Correlation analysis
 - Service-wise churn patterns
 - Tenure and revenue analysis
-- Contract-type impact analysis
+- Contract-type impact analysis 
 
 ### 3. SQL Analytics
 
