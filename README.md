@@ -111,6 +111,7 @@ churn_analysis/
 ├── SQLQuery3.sql
 ├── SQLQuery4.sql
 ├── SQLQuery5.sql
+├── LICENSE
 └── README.md
 ```
 
@@ -161,6 +162,12 @@ Open `Churn_Analysis_visualization.pbix` in Power BI Desktop. To refresh the dat
 - Make the notebook read directly from SQL Server
 - Serve predictions through a Flask/FastAPI API
 - Automate the dashboard refresh
+
+---
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
