@@ -22,7 +22,7 @@ Customer churn significantly impacts revenue and long-term business growth. This
 
 - SQL Server (T-SQL)
 - Python: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-- Jupyter Notebook / Google Colab
+- Jupyter Notebook (runs locally or in Google Colab)
 - Power BI
 
 ---
@@ -111,6 +111,7 @@ churn_analysis/
 ├── SQLQuery3.sql
 ├── SQLQuery4.sql
 ├── SQLQuery5.sql
+├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
@@ -136,18 +137,28 @@ cd churn_analysis
 
 ### 3. Run the notebook
 
-The notebook is written for **Google Colab** and reads the data from Google Drive.
+The notebook detects where it is running and works both locally and in Google Colab.
+
+**Locally**
+
+1. Put `Prediction_Data.xlsx` in the same folder as the notebook.
+2. Install the dependencies and start Jupyter:
+
+   ```bash
+   pip install -r requirements.txt
+   jupyter notebook
+   ```
+
+3. Open `Random_Forest_Codes.ipynb` and run all cells.
+4. The predicted churners are saved to `Predictions.csv` in the same folder.
+
+If you keep the data somewhere else, set the `CHURN_DATA_DIR` environment variable to that folder before starting Jupyter. The output is written to the same folder.
+
+**In Google Colab**
 
 1. Upload `Prediction_Data.xlsx` to the root of your Google Drive (`MyDrive`).
-2. Open `Random_Forest_Codes.ipynb` in Colab and run all cells. Allow Drive access when asked.
-3. The predictions are written to `MyDrive/Predictions.csv`.
-
-To run it locally instead, remove the two `google.colab` lines in the first cell, change `file_path` to your local copy of `Prediction_Data.xlsx` (and the output path in the prediction cell), then:
-
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn openpyxl jupyter
-jupyter notebook
-```
+2. Open the notebook in Colab and run all cells. Allow Drive access when asked.
+3. The predictions are saved to `MyDrive/Predictions.csv`.
 
 ### 4. Open the dashboard
 
